@@ -7,6 +7,7 @@ import Grid from 'react-bootstrap/lib/Grid';
 import Jumbotron from 'react-bootstrap/lib/Jumbotron';
 import Button from 'react-bootstrap/lib/Button';
 import Glyphicon from 'react-bootstrap/lib/Glyphicon';
+import { SpeedIndicator } from 'components/SpeedIndicator';
 
 @connect(s => s.app)
 export class App extends React.Component {
@@ -22,7 +23,7 @@ export class App extends React.Component {
                 marginTop: 50,
             },
             jumbo: {
-                borderRadius: 0,
+                borderRadius: 50,
                 boxShadow: '2px 2px 5px #aaa',
             },
             icon: {
@@ -41,7 +42,10 @@ export class App extends React.Component {
                         <Glyphicon glyph="hand-right" style={styles.icon} />
                         Learn more about Reapp
                     </Button>
+                    smth
                 </Jumbotron>
+                <SpeedIndicator speed={56} />
+                <SpeedIndicator speed={20} />
             </Grid>
         );
     }
