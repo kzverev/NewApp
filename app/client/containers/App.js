@@ -42,10 +42,10 @@ export class App extends React.Component {
                         <Glyphicon glyph="hand-right" style={styles.icon} />
                         Learn more about Reapp
                     </Button>
-                    smth
+                    kok
                 </Jumbotron>
                 <SpeedIndicator speed={56} />
-                <SpeedIndicator speed={20} />
+                <SpeedIndicator speed={80} />
             </Grid>
         );
     }
